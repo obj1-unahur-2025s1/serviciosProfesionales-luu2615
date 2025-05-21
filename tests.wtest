@@ -1,0 +1,13 @@
+import empresas.*
+import profesionales.*
+import universidades.*
+
+describe "Tests universidad" {
+
+  test "Tenemos estas universidades: de San Martín: está en la provincia de Buenos Aires, los honorarios recomendados son de 3500 pesos." {
+    var sanMartin = new Universidad(provincia = "Buenos Aires", honorariosRecomendados = 3500)
+    assert.equals("Buenos Aires", sanMartin.provincia())
+    assert.equals(3500, sanMartin.honorariosRecomendados())
+  }
+
+}
