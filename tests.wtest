@@ -9,5 +9,10 @@ describe "Tests universidad" {
     assert.equals("Buenos Aires", sanMartin.provincia())
     assert.equals(3500, sanMartin.honorariosRecomendados())
   }
+  test "de Rosario: está en la provincia de Santa Fe, los honorarios recomendados son de 2800 pesos." {
+    var rosario = new Universidad(provincia = "Santa fe", honorariosRecomendados = 2800)
+    assert.equals("Santa fe", rosario.provincia())
+    assert.equals(3500, rosario.honorariosRecomendados())
+  }
 
 }
